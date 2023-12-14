@@ -12,7 +12,7 @@ from esphome.const import (
 from esphome.core import coroutine_with_priority
 
 CODEOWNERS = ["@rfdarter/coopSettings"]
-coopSettings_ns = cg.esphome_ns.namespace("coopSettings")
+coopSettings_ns = cg.esphome_ns.namespace("CoopSettings")
 RestoringCoopSettingComponent = coopSettings_ns.class_("RestoringCoopSettingsComponent", cg.Component)
 
 CONF_MAX_RESTORE_DATA_LENGTH = "max_restore_data_length"

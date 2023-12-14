@@ -6,7 +6,7 @@
 #include <cstring>
 
 namespace esphome {
-namespace coopSettings {
+namespace CoopSettings {
 
 typedef struct RoomSettings
 {
