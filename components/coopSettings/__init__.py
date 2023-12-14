@@ -32,7 +32,7 @@ CONFIG_SCHEMA = cv.Schema(
 # Run with low priority so that namespaces are registered first
 @coroutine_with_priority(-100.0)
 async def to_code(config):
-    type_ = coopSettings_ns
+    type_ = coopSettings_ns + ':' + coopSettings_ns
     restore = config[CONF_RESTORE_VALUE]
 
     template_args = cg.TemplateArguments(type_)
